@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.post("/save",(req,res) =>{
-                            const url = "mongodb://0.0.0.0:27017";
+                            const url = "mongodb+srv://harshaspatil15_db_user:bRJYLdwVCKpQ5e1a@cluster0.c7ogshs.mongodb.net/?appName=Cluster0";
                             const con = new MongoClient(url);
                             const db = con.db("review6jan26");
                             const coll = db.collection("review");
@@ -30,4 +30,5 @@ app.listen(9000, () =>{
 
 
  
+
                             
